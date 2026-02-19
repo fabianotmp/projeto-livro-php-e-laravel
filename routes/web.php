@@ -8,4 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/produtos',[ProdutoController::class, 'index']);
-Route::get('/produtos/detalhes/{id}',[ProdutoController::class, 'show']);
+Route::get('/produtos/show/{id}',[ProdutoController::class, 'show']);

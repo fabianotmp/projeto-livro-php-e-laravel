@@ -12,11 +12,11 @@ class ProdutoController extends Controller
     public function index(){
 
         $produtos = DB::select('select * from produtos');
-        return view('produtos', ['produtos' => $produtos]);
+        return view('produtos/index', ['produtos' => $produtos]);
     }
 
     public function show($id){
         $produto  = Produto::findOrFail($id);
-        return view('/detalhes', ['produto'=>$produto]);
+        return view('produtos/show', ['produto'=>$produto]);
     }
 }

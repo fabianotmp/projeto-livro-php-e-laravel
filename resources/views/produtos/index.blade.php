@@ -3,7 +3,6 @@
 @section('title', 'Produtos')
 
 @section('content')
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 <table border="1" style="border-collapse: collapse">
 	<thead>
@@ -22,7 +21,7 @@
 			<td>{{$produto->valor}}</td>
 			<td>{{$produto->descricao}}</td>
 			<td>{{$produto->quantidade}}</td>
-			<td> <a href="/produtos/detalhes/{{$produto->id}}"><i class="bi bi-search"></i></a></td>
+			<td> <a href="{{ url('/produtos/show', $produto->id) }}"><i class="bi bi-search"></i></a></td>
 		</tr>
 		@endforeach
 	</tbody>
