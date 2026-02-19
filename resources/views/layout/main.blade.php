@@ -52,6 +52,20 @@
         th, td{
             padding: .5rem;
         }
+        .pagination {
+            padding: 1rem;
+            display: flex;
+            gap:1rem;
+            list-style: none;
+        }
+        .pagination li a{
+            color:#000;
+            font-weight:bold;
+            text-decoration: none;
+        }
+        .pagination span{
+            display: none;
+        }
     </style>
 </head>
 <body>

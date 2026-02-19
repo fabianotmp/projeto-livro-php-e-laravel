@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layout.main')
 
 @section('title', 'Produtos')
 
@@ -26,5 +26,7 @@
 		@endforeach
 	</tbody>
 </table>
+
+{{ $produtos->links('pagination::simple-default') }}
 
 @endsection
